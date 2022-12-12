@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/page-4.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main4.css">
+    <!-- meta tag -->
+    <meta name='keywords' content=''>
+    <meta name='description' content='this is for website web'>
+    <meta name='copyright' content='company name'>
+    <meta name='language' content='AR'>
+    <meta name='robots' content='index,follow'>
+
+    <meta name='og:title' content='The Rock'>
+    <meta name='og:type' content='movie'>
+    <meta name='og:url' content='http://www.imdb.com/title/tt0117500/'>
+    <meta name='og:image' content='assets/img/page-4.png'>
+    <meta name='og:site_name' content='web'>
+    <meta name='og:description' content='A group of U.S. Marines, under command of...'>
+
+    <link href='assets/img/page-4.png' rel='apple-touch-icon' type='image/png'>
+    <link href='assets/img/page-4.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='assets/img/page-4.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='assets/img/page-4.png' rel='apple-touch-startup-image'>
+
+    <link href='assets/img/page-4.png' sizes='114x114' rel='apple-touch-icon-precomposed'>
+    <link href='assets/img/page-4.png' sizes='72x72' rel='apple-touch-icon-precomposed'>
+    <link href='assets/img/page-4.png' sizes='57x57' rel='apple-touch-icon-precomposed'>
+
+    <link rel='canonical' href='www.website.com'>
+
+    <link rel='logo' type='image/svg' href='assets/img/page-4.png'>
+    <link rel='image_src' href='assets/img/page-4.png' type='image/jpeg'>
+
+    <!-- end meta tag -->
+    <title>Template Start</title>
+</head> 
+<body>
+    <script>
+        document.getElementById('ogBtn').onclick = function() {
+          FB.ui({
+            display: 'popup',
+            method: 'share_open_graph',
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+                object:'https://developers.facebook.com/docs/',
+            })
+          }, function(response){});
+        }
+        </script>
+    <section class="final-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="image-final">
+                        <img src="assets/img/page-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="final-content">
+                        <h1>تهانينا</h1>
+                        <p>بانهاك هذه اللعبة انت الأن تعتبر من المدافعين عن ضحايا الاتجار بالبشر والحد منها .، معا نعمل
+                            من أجل انهاء جريمة الاتجار بالبشر وضمان حقوق جميع العمال المهاجرين، باعتبارهم الأكثر عرضة
+                            لجريمة الاتجار بالبشر.</p>
+                    </div>
+
+                    <div class="Final-flex-btn">
+                        <button class="btn btn-final-click"><a href="anylink.com">إنهاء اللعبة</a></button>
+                        <button class="btn btn-final-click">إعادة اللعبة</button>
+                        <button class="btn btn-final-click popup-trigger ">قائمة الجهات للتبليغ</button>
+                        <!-- <button class="btn btn-final-click">
+                                <a name='fb_share' type='button_count'
+                                    href='http://www.facebook.com/sharer.php?appId={YOUR APP ID}&link=<?php the_permalink() ?>'
+                                    rel='nofollow'> شاركها مع اصدقائك
+                                </a> </button> -->
+
+                        <!-- <div class="fb-share-button" data-href="website.com" data-layout="button" data-size="large"><a
+                                target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwebsite.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore btn btn-final-click"> شاركها مع اصدقائك</a></div> -->
+                        <!-- <div class="fb-share-button btn btn-final-click"
+                            data-href="https://www.your-domain.com/your-page.html" data-layout="button_count">
+                            شاركها مع اصدقائك </div> -->
+                            <div id="ogBtn" class="btn btn-success clearfix">Simple OG Dialog</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class=" popup">
+        <div class="popup__content">
+            <div class="popup__body">
+                <button class="popup__close" type="button"></button>
+                <div class="popup__text">
+                    <!-- content pop up video -->
+                    <figure>
+                        <!-- <figcaption style="font-size: 18px;">phone number <a href="tel:0096277999999">0096279797979</a>
+                        </figcaption>
+                        <figcaption style="font-size: 18px;">phone number <a href="tel:0096277999999">0096279797979</a>
+                        </figcaption>
+                        <figcaption style="font-size: 18px;">phone number <a href="tel:0096277999999">0096279797979</a>
+                        </figcaption> -->
+                     
+                        <img src="assets/img/page3-m.jpg" style="width: 250px;" width="200" alt="">
+
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script>
+        const popupTrigger = document.querySelector('.popup-trigger');
+        const popup = document.querySelector('.popup');
+        const popupClose = document.querySelector('.popup__close');
+
+        popupTrigger.addEventListener('click', (e) => {
+            popup.classList.add('show');
+            document.body.style.cssText = `overflow: hidden;`;
+
+        });
+
+        popupClose.addEventListener('click', (e) => {
+            popup.classList.remove('show');
+            document.body.style.cssText = '';
+        });
+
+        // close on click on overlay
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.remove('show');
+                document.body.style.cssText = '';
+            }
+        });
+
+        // close on press of escape button
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === "Escape" && popup.classList.contains('show')) {
+                popup.classList.remove('show');
+                document.body.style.cssText = '';
+            }
+        });
+
+
+    </script>
+    
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+ 
+
+      
+</body>
+
+</html>

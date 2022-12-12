@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/main2.css">
+    <style>
+        .display-block {
+            display: block;
+        }
+
+        .display-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- image background -->
+    <section class="sec-question1" style="background:url(assets/img/page2-background.png)">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-first">
+                    <div class="question-img-container ">
+                        <!-- mini image  -->
+                        <img src="assets/img/page2-img.png" class="question-image" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="question-content display-block" id="qdiv">
+                        <button class="popup-trigger"> <i class="bi bi-play-btn"></i></button>
+                        <h1 style="color: #813739;">ترتفع بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات
+                            الحروب والنزاعات
+                            المسلحة.
+                        </h1>
+
+                        <!-- end title of the question -->
+                        <div class="row question-footer">
+                            <!-- <form action="" method=""> -->
+                            <!-- select option -->
+                            <style>
+                                .slidecontainer {
+                                    width: 100%;
+                                }
+
+                                .slider {
+                                    /* -webkit-appearance: none; */
+                                    width: 100%;
+                                    max-width: 70%;
+                                    height: 12px;
+                                    background: #000; 
+                                    outline: none;
+                                    border-radius: 10px;
+                                    opacity: 0.7;
+                                    -webkit-transition: .2s;
+                                    transition: opacity .2s;
+                                    direction: rtl;
+                                }
+
+                                .slider:hover {
+                                    opacity: 1;
+                                }
+
+                                .slider::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 21px;
+                                    height: 21px;
+                                    background: #acc33b !important;
+                                    cursor: pointer;
+                                    border-radius: 20px;
+                                }
+
+                                .slider::-moz-range-thumb {
+                                    width: 20px;
+                                    height: 20px;
+                                    background: #7a3d04 !important;
+                                    cursor: pointer;
+                                }
+                            </style>
+                            <div class="flex-content">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <span>* حرك المؤشر لتحديد النسبة</span>
+                                    <div class="display-flex-center " style=" direction:rtl;">
+                                        <input type="range" min="1" max="100" value="50" class="slider m-2"
+                                            id="myRange">
+                                        <div><span id="demo"></span>%</div>
+                                    </div>
+                                    <div class="display-flex-center " style=" direction:rtl;">
+                                        <input type="range" min="1" max="100" value="50" class="slider m-2"
+                                            id="myRange1">
+                                        <div><span id="demo1"></span>%</div>
+
+                                    </div>
+                                    <div class="display-flex-center " style=" direction:rtl;">
+                                        <input type="range" min="1" max="100" value="50" class="slider m-2"
+                                            id="myRange2">
+                                        <div><span id="demo2"></span>%</div>
+
+                                    </div>
+
+                                </div>
+                            </div> 
+                            <div class="flex-content">
+                                <!-- buttons is 4 here  -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions" id="yesbtn"> الاجابة </button>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- real answer description here -->
+                    <div class="display-none" id="yesdiv">
+
+                        <h1 style="color: #813739;"> yes
+                        </h1>
+                        <p style="color: #813739;">
+                            yes
+                        </p>
+                        <div class="col-lg-12 col-md-12 col-sm-3 text-center">
+                            <button class="btn btn-questions">السؤال التاني</button>
+                        </div>
+                    </div>
+                    <div class="display-none" id="nodiv">
+
+                        <h1 style="color: #813739;"> no
+
+                        </h1>
+                        <p style="color: #813739;">no
+                        </p>
+                        <div class="col-lg-12 col-md-12 col-sm-3 text-center">
+                            <button class="btn btn-questions">السؤال التاني</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap links -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- end bootstrap link -->
+    <script>
+        // var yesbtn = $('#yesbtn');
+        var qdiv = document.getElementById('qdiv');
+        var adiv = document.getElementById('adiv');
+        var yesdiv = document.getElementById('yesdiv');
+        var nodiv = document.getElementById('nodiv');
+
+
+        $('#yesbtn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            yesdiv.classList.remove('display-none');
+            yesdiv.classList.add('display-block');
+        });
+        $('#nobtn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            nodiv.classList.remove('display-none');
+            nodiv.classList.add('display-block');
+        }); 
+    </script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+
+        }
+        var slider1 = document.getElementById("myRange1");
+        var output1 = document.getElementById("demo1");
+        output1.innerHTML = slider.value;
+
+        slider1.oninput = function () {
+            output1.innerHTML = this.value;
+
+        }
+        var slider2 = document.getElementById("myRange2");
+        var output2 = document.getElementById("demo2");
+        output2.innerHTML = slider.value;
+
+        slider2.oninput = function () {
+            output2.innerHTML = this.value;
+
+        }
+    </script>
+</body>
+
+</html>

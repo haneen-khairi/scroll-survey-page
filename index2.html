@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/main2.css">
+    <style>
+        .display-block {
+            display: block;
+        }
+
+        .display-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- image background -->
+    <section class="sec-question1" style="background:url(assets/img/page2-background.png)">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-first">
+                    <div class="question-img-container ">
+                        <!-- mini image  -->
+                        <img src="assets/img/page2-img.png" class="question-image" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="question-content display-block" id="qdiv">
+                        <!-- pop up icon for the video -->
+                        <button class="popup-trigger"> <i class="bi bi-play-btn"></i></button>
+                        <!-- end icon show pop up -->
+
+                        <!-- title of question -->
+                        <h1 style="color: #813739;">ترتفع بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات
+                            الحروب والنزاعات
+                            المسلحة.
+                        </h1>
+                        <h1 style="color: #813739;">برأيك ما هي أكثر الانتهاكات شيوعا في البلدان التي تشهد نزاعات وحروب؟
+                        </h1>
+                        <!-- end title of the question -->
+                        <div class="row question-footer">
+                            <!-- <form action="" method=""> -->
+                            <div class="flex-content">
+                                <!-- buttons is 4 here  -->
+                                <div class="col-lg-6 col-md-6 col-sm-3">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions">الجواب الاول</button>
+                                    </div>
+                                </div>
+                                <!-- end of buttons is 4 here  -->
+                                <div class="col-lg-6 col-md-6 col-sm-3">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions">الجواب الثاني</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-content">
+                                <div class="col-lg-6 col-md-6 col-sm-3">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions" id="2btn">الجواب الثالث</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-3">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions" id="1btn">الجواب الرابع</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- </form> -->
+                            <div class="flex-content">
+                                <div class="col-lg-12 col-md-12 col-sm-3">
+                                    <div class="display-flex-center">
+                                        <button class="btn btn-questions" onclick="onChangeDiv()" id="yesbtn"> الاجابه
+                                            الصحيحة</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- real answer description here -->
+                    <div class="display-none" id="adiv">
+
+                        <h1 style="color: #813739;">ترتفع بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات
+                            الحروب والنزاعات
+                        </h1>
+                        <p style="color: #813739;">ترتفع بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات
+                            الحروب ترتفع بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات الحروب ترتفع
+                            بشكل ملحوظ جرائم الإتجار بالبشر في البلدان التي تعاني من حالات الحروب ترتفع بشكل ملحوظ جرائم
+                            الإتجار بالبشر في البلدان التي تعاني من حالات الحروب والنزاعات
+                        </p>
+                        <div class="col-lg-12 col-md-12 col-sm-3 text-center">
+                            <button class="btn btn-questions">السؤال التاني</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pop up video or audio content -->
+    <div class=" popup">
+        <div class="popup__content">
+            <div class="popup__body">
+                <button class="popup__close" type="button"></button>
+                <div class="popup__text">
+                    <!-- content pop up video -->
+                    <figure>
+                        <figcaption>Show the video</figcaption>
+                        <br />
+                        <iframe src="assets/img/video.mp4" class="iframe-video-audio" frameborder="0"></iframe>
+                    </figure>
+
+                    <!-- end content video -->
+
+                    <!-- content audio -->
+                    <figure>
+                        <figcaption>Listen to the Audio</figcaption>
+                        <br />
+                        <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                        </audio>
+                    </figure>
+                    <!-- end content audio -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap links -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- end bootstrap link -->
+    <!-- pop up video and adio script -->
+    <script>
+        const popupTrigger = document.querySelector('.popup-trigger');
+        const popup = document.querySelector('.popup');
+        const popupClose = document.querySelector('.popup__close');
+
+        popupTrigger.addEventListener('click', (e) => {
+            popup.classList.add('show');
+            document.body.style.cssText = `overflow: hidden;`;
+
+        });
+
+        popupClose.addEventListener('click', (e) => {
+            popup.classList.remove('show');
+            document.body.style.cssText = '';
+        });
+
+        // close on click on overlay
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.remove('show');
+                document.body.style.cssText = '';
+            }
+        });
+
+        // close on press of escape button
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === "Escape" && popup.classList.contains('show')) {
+                popup.classList.remove('show');
+                document.body.style.cssText = '';
+            }
+        });
+
+
+    </script>
+    <script>
+        // var yesbtn = $('#yesbtn');
+        var qdiv = document.getElementById('qdiv');
+        var adiv = document.getElementById('adiv');
+        // function onChangeDiv() {
+        //     qdiv.classList.remove('display-block');
+        //     qdiv.classList.add('display-none');
+        //     adiv.classList.remove('display-none');
+        //     adiv.classList.add('display-block');
+        // }
+      
+
+        $('#yesbtn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            adiv.classList.remove('display-none');
+            adiv.classList.add('display-block');
+        });
+        $('#1btn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            adiv.classList.remove('display-none');
+            adiv.classList.add('display-block');
+        });
+        $('#2btn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            adiv.classList.remove('display-none');
+            adiv.classList.add('display-block');
+        });
+        $('#3btn').click(function () {
+            qdiv.classList.remove('display-block');
+            qdiv.classList.add('display-none');
+            adiv.classList.remove('display-none');
+            adiv.classList.add('display-block');
+        });
+    </script>
+</body>
+
+</html>
